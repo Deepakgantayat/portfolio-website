@@ -30,7 +30,7 @@ You can clone or download the repository to view the portfolio on your local mac
 
 ```bash
 git clone https://github.com/yourusername/portfolio-website.git
-
+```
 ### The URL
 
 **Live Demo**: [Deepak's Portfolio](https://portfolio-website-ten-omega-95.vercel.app/)
