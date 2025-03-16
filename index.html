@@ -302,7 +302,7 @@
                 <div>and I am a passionate</div>
                 <span id="element"></span>
                 <div>
-                    <button class="resume-btn">Download Resume</button>
+                    <button class="resume-btn" id="resume-btn">Download Resume</button>
                 </div>
             </div>
             <div class="rightSection">
@@ -402,6 +402,17 @@
         const projectsLink = document.getElementById('projects-link');
         const linkedinLink = document.getElementById('linkedin-link');
         const githubLink = document.getElementById('github-link');
+        const resumeBtn = document.getElementById('resume-btn');
+
+        // Add resume download functionality
+        resumeBtn.addEventListener('click', function() {
+            const link = document.createElement('a');
+            link.href = 'Deepak_kumar__Gantayat_-_Full_Stack_Developer.pdf';
+            link.download = 'Deepak_kumar__Gantayat_-_Full_Stack_Developer.pdf';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        });
 
         // Add separate click event handlers for each link
         homeLink.addEventListener('click', function (event) {
